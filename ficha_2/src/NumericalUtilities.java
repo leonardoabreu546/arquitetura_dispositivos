@@ -32,4 +32,24 @@ public class NumericalUtilities {
         }
         return resultado;
     }
+
+    public static int[] numberOfDivisorsOf(int numero) {
+        int quantidade=0;
+        for (int i = 1; i <= numero; i++) {
+            if(numero%i==0) {
+                quantidade += 1;
+            }
+        }
+
+        int[] divisores = new int[quantidade];
+
+        int indice=0;
+        for (int i = 1; i <= numero; i++) {
+            if(numero%i==0) {
+                divisores[indice] = i;
+                indice++;
+            }
+        }
+        return divisores;
+    }
 }

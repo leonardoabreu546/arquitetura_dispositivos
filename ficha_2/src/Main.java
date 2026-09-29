@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         int resultado = NumericalUtilities.powerOf(2, 3);
@@ -12,5 +14,8 @@ public class Main {
         int somaParesIntervalo = NumericalUtilities.sumOfEvenNumbersBetween(1, 5);
         System.out.println("A soma dos números pares do intervalo é: " + somaParesIntervalo);
 
+        int[] divisores= NumericalUtilities.numberOfDivisorsOf(9);
+        System.out.println("Os divisores de " +divisores.length+ " são: " + Arrays.toString(divisores));
+        
     }
 }
