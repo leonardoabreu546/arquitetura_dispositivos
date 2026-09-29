@@ -46,7 +46,7 @@ public class Main {
   public static double media(double[] valores) {
     double soma=0;
     for (int i = 1; i < valores.length; i++) {
-      soma = +valores[i];
+      soma += valores[i];
       }
 
     double media=soma/valores.length;
