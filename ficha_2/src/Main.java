@@ -8,5 +8,9 @@ public class Main {
 
         int somaIntervalo = NumericalUtilities.sumOfNaturalNumbersBetween(1, 5);
         System.out.println("A soma do intervalo é: " + somaIntervalo);
+
+        int somaParesIntervalo = NumericalUtilities.sumOfEvenNumbersBetween(1, 5);
+        System.out.println("A soma dos números pares do intervalo é: " + somaParesIntervalo);
+
     }
 }

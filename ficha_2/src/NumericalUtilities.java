@@ -24,5 +24,12 @@ public class NumericalUtilities {
         return resultado;
     }
 
-
+    public static int sumOfEvenNumbersBetween(int numero1, int numero2) {
+        int resultado = 0;
+        for (int i = numero1+1; i < numero2; i++) {
+            if(i%2==0)
+                resultado += i;
+        }
+        return resultado;
+    }
 }
