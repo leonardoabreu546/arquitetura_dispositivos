@@ -14,8 +14,9 @@ public class Main {
         int somaParesIntervalo = NumericalUtilities.sumOfEvenNumbersBetween(1, 5);
         System.out.println("A soma dos números pares do intervalo é: " + somaParesIntervalo);
 
-        int[] divisores= NumericalUtilities.numberOfDivisorsOf(9);
-        System.out.println("Os divisores de " +divisores.length+ " são: " + Arrays.toString(divisores));
-        
+        int numero = 9;
+        int[] divisores= NumericalUtilities.numberOfDivisorsOf(numero);
+        System.out.println("Os divisores de " +numero+ " são: " + Arrays.toString(divisores));
+
     }
 }
