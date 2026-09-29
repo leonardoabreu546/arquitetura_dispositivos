@@ -5,5 +5,8 @@ public class Main {
 
         int soma = NumericalUtilities.sumOfNaturalNumbersUpTo(5);
         System.out.println("O resultado da soma é: " + soma);
+
+        int somaIntervalo = NumericalUtilities.sumOfNaturalNumbersBetween(1, 5);
+        System.out.println("A soma do intervalo é: " + somaIntervalo);
     }
 }

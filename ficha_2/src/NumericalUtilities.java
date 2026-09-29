@@ -16,4 +16,13 @@ public class NumericalUtilities {
         return resultado;
     }
 
+    public static int sumOfNaturalNumbersBetween(int numero1, int numero2) {
+        int resultado = 0;
+        for (int i = numero1+1; i < numero2; i++) {
+            resultado += i;
+        }
+        return resultado;
+    }
+
+
 }
