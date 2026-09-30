@@ -34,7 +34,9 @@ public class Main {
         float maior = ArrayUtilities.maximumOf(numeros4);
         System.out.println("O maior número é: " + maior);
 
-
+        float[] numeros5 = {23.4f, 9.7f, 72.8f, 15.0f};
+        float menor = ArrayUtilities.minimumOf(numeros5);
+        System.out.println("O maior número é: " + menor);
 
     }
 }
