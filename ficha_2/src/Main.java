@@ -26,7 +26,7 @@ public class Main {
             System.out.println("O número " + numero2 + " não é primo.");
         }
 
-        int[] numeros3 = {10, 20, 30};
+        float[] numeros3 = {10.8f, 20, 30.6f};
         String texto = ArrayUtilities.toString(numeros3);
         System.out.println(texto);
 
@@ -34,9 +34,11 @@ public class Main {
         float maior = ArrayUtilities.maximumOf(numeros4);
         System.out.println("O maior número é: " + maior);
 
-        float[] numeros5 = {23.4f, 9.7f, 72.8f, 15.0f};
-        float menor = ArrayUtilities.minimumOf(numeros5);
+
+        float menor = ArrayUtilities.minimumOf(numeros4);
         System.out.println("O menor número é: " + menor);
 
+        float[] copia = ArrayUtilities.copyOf(numeros4);
+        System.out.println("Cópia do array: " + ArrayUtilities.toString(copia));
     }
 }

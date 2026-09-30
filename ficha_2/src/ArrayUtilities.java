@@ -1,5 +1,5 @@
 public class ArrayUtilities {
-    public static String toString(int[] array){
+    public static String toString(float[] array){
         StringBuilder res =new StringBuilder();
 
         for(int i=0;i<array.length; i++){
@@ -31,5 +31,13 @@ public class ArrayUtilities {
             }
         }
         return menor;
+    }
+
+    public static float[] copyOf (float[] array){
+        float[] copia = new float[array.length];
+        for(int i=0; i<array.length; i++){
+            copia[i]=array[i];
+        }
+        return copia;
     }
 }
