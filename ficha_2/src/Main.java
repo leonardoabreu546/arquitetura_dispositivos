@@ -26,9 +26,14 @@ public class Main {
             System.out.println("O número " + numero2 + " não é primo.");
         }
 
-        int[] numeros = {10, 20, 30};
-        String texto = ArrayUtilities.toString(numeros);
+        int[] numeros3 = {10, 20, 30};
+        String texto = ArrayUtilities.toString(numeros3);
         System.out.println(texto);
+
+        float[] numeros4 = {12.4f, 6.7f, 7.8f, 5.0f};
+        float maior = ArrayUtilities.maximumOf(numeros4);
+        System.out.println("O maior número é: " + maior);
+
 
 
     }

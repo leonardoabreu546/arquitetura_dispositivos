@@ -12,4 +12,14 @@ public class ArrayUtilities {
 
         return res.toString();
     }
+
+    public static float maximumOf (float[] array){
+        float maior = array[0];
+        for(int i=0; i<array.length; i++){
+            if(array[i]>maior){
+                maior=array[i];
+            }
+        }
+        return maior;
+    }
 }
