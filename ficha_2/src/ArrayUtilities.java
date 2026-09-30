@@ -40,4 +40,13 @@ public class ArrayUtilities {
         }
         return copia;
     }
+
+    public static boolean contains (float[] array, float verificar){
+        for (int i=0; i<array.length; i++){
+            if(array[i]==verificar) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

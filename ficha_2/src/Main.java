@@ -40,5 +40,13 @@ public class Main {
 
         float[] copia = ArrayUtilities.copyOf(numeros4);
         System.out.println("Cópia do array: " + ArrayUtilities.toString(copia));
+
+        float numeroVerificar=12.4f;
+        boolean existe = ArrayUtilities.contains(numeros4, numeroVerificar);
+        if (existe){
+            System.out.println("O número " + numeroVerificar + " pertence ao array.");
+        } else {
+            System.out.println("O número " + numeroVerificar + " não pertence ao array.");
+        }
     }
 }
