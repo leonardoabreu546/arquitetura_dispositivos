@@ -14,9 +14,22 @@ public class Main {
         int somaParesIntervalo = NumericalUtilities.sumOfEvenNumbersBetween(1, 5);
         System.out.println("A soma dos números pares do intervalo é: " + somaParesIntervalo);
 
-        int numero = 9;
-        int[] divisores= NumericalUtilities.numberOfDivisorsOf(numero);
-        System.out.println("Os divisores de " +numero+ " são: " + Arrays.toString(divisores));
+        int numero1 = 9;
+        int[] divisores1 = NumericalUtilities.numberOfDivisorsOf(numero1);
+        System.out.println("Os divisores de " +numero1+ " são: " + Arrays.toString(divisores1));
+
+        int numero2 = 3;
+        boolean divisores2 = NumericalUtilities.isPrime(numero2);
+        if (divisores2) {
+            System.out.println("O número " + numero2 + " é primo.");
+        } else {
+            System.out.println("O número " + numero2 + " não é primo.");
+        }
+
+        int[] numeros = {10, 20, 30};
+        String texto = ArrayUtilities.toString(numeros);
+        System.out.println(texto);
+
 
     }
 }

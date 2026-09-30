@@ -53,5 +53,14 @@ public class NumericalUtilities {
         return divisores;
     }
 
+    public static boolean isPrime(int numero) {
+        int quantidade=0;
+        for (int i = 1; i <= numero; i++) {
+            if(numero%i==0) {
+                quantidade += 1;
+            }
+        }
+        return quantidade == 2;
+    }
 
 }
