@@ -61,5 +61,13 @@ public class ArrayUtilities {
         return false;
     }
 
+    public static int indexOf (float[] array, float verificar){
+        for (int i=0; i<array.length; i++){
+            if(array[i]==verificar) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 }

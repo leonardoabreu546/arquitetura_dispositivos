@@ -57,5 +57,14 @@ public class Main {
             System.out.println("O array não tem números duplicados.");
         }
 
+        int existente = ArrayUtilities.indexOf(numeros4, numeroVerificar);
+        if (existente==-1){
+            System.out.println("O número não existe no array: " + existente);
+        } else {
+            System.out.println("O número existe no array: " + existente);
+        }
+
+
+
     }
 }
