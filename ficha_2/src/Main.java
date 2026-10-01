@@ -48,5 +48,14 @@ public class Main {
         } else {
             System.out.println("O número " + numeroVerificar + " não pertence ao array.");
         }
+
+        float[] numeros5 = {12.8f, 34.9f, 21.6f, 12.8f};
+        boolean repetido = ArrayUtilities.containsDuplicates(numeros5);
+        if (repetido){
+            System.out.println("O array tem números duplicados.");
+        } else {
+            System.out.println("O array não tem números duplicados.");
+        }
+
     }
 }

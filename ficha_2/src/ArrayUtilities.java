@@ -49,4 +49,17 @@ public class ArrayUtilities {
         }
         return false;
     }
+
+    public static boolean containsDuplicates (float[] array){
+        for (int i=0; i<array.length; i++){
+            for (int v=i+1; v<array.length; v++) {
+                if (array[i] == array[v]) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
 }
