@@ -64,7 +64,8 @@ public class Main {
             System.out.println("O número existe no array: " + existente);
         }
 
-
-
+        float adicionar = 65.7f;
+        float[] novoArray=ArrayUtilities.add(numeros5, adicionar);
+        System.out.println("O novo array é: " +ArrayUtilities.toString(novoArray));
     }
 }

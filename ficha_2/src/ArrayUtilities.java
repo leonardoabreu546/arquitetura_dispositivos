@@ -70,4 +70,18 @@ public class ArrayUtilities {
         return -1;
     }
 
+    public static float[] add (float[] array, float adicionar){
+
+        float[] novoArray = new float[array.length+1];
+
+        for(int i=0; i< array.length; i++){
+            novoArray[i] = array[i];
+        }
+
+        novoArray[array.length] = adicionar;
+
+        return novoArray;
+
+    }
+
 }
