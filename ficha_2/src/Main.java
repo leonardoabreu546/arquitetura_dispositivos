@@ -59,9 +59,9 @@ public class Main {
 
         int existente = ArrayUtilities.indexOf(numeros4, numeroVerificar);
         if (existente==-1){
-            System.out.println("O número não existe no array: " + existente);
+            System.out.println("O número não existe no array: " + numeroVerificar);
         } else {
-            System.out.println("O número existe no array: " + existente);
+            System.out.println("O número existe no array: " + numeroVerificar);
         }
 
         float adicionar = 65.7f;
