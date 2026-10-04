@@ -67,5 +67,13 @@ public class Main {
         float adicionar = 65.7f;
         float[] novoArray=ArrayUtilities.add(numeros5, adicionar);
         System.out.println("O novo array é: " +ArrayUtilities.toString(novoArray));
+
+        float eliminar = 34.9f;
+        float[] arrayAlterado =ArrayUtilities.remove(numeros5, eliminar);
+        if(arrayAlterado == numeros5){
+            System.out.println("O valor " + eliminar + " não existe no array.");
+        } else {
+            System.out.println("Novo array com o valor " + eliminar + " removido: " + ArrayUtilities.toString(arrayAlterado));
+        }
     }
 }

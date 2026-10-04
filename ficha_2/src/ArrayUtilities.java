@@ -84,4 +84,22 @@ public class ArrayUtilities {
 
     }
 
+    public static float[] remove (float[] array, float eliminar){
+
+        int indiceEncontrado = indexOf(array, eliminar);
+        if(indiceEncontrado == -1){
+            return array;
+        }
+        float[] novoArray = new float[array.length-1];
+        int indice =0;
+
+        for(int i=0; i< array.length; i++){
+            if(array[i]!=eliminar) {
+                novoArray[indice]=array[i];
+                indice+=1;
+            }
+        }
+        return novoArray;
+    }
+
 }
