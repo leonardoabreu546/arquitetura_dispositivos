@@ -102,4 +102,14 @@ public class ArrayUtilities {
         return novoArray;
     }
 
+    public static float[] reverse (float[] array){
+        float[] arrayInvertido = new float[array.length];
+        int indice = 0;
+        for (int i=array.length-1; i>=0; i--){
+            arrayInvertido[indice]=array[i];
+            indice++;
+        }
+        return arrayInvertido;
+    }
+
 }

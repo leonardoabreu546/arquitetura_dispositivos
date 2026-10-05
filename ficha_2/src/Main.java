@@ -75,5 +75,9 @@ public class Main {
         } else {
             System.out.println("Novo array com o valor " + eliminar + " removido: " + ArrayUtilities.toString(arrayAlterado));
         }
+
+        float[] arrayInvertido=ArrayUtilities.reverse(numeros5);
+        System.out.println("Array original: " + ArrayUtilities.toString(numeros5));
+        System.out.println("Array invertido: " + ArrayUtilities.toString(arrayInvertido));
     }
 }
