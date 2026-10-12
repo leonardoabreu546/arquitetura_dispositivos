@@ -79,5 +79,21 @@ public class Main {
         float[] arrayInvertido=ArrayUtilities.reverse(numeros5);
         System.out.println("Array original: " + ArrayUtilities.toString(numeros5));
         System.out.println("Array invertido: " + ArrayUtilities.toString(arrayInvertido));
+
+
+
+
+        // 1. Preenchimento dos arrays com 3 valores cada
+        String[] nAlunos = {"Ana", "Bruno", "Carla"};
+        String[] disciplinas = {"Matemática", "Português", "Física"};
+
+        // 2. Criação da matriz (3x3) para armazenar dados (ex: notas dos alunos nas respetivas disciplinas)
+        String[][] matriz = {
+                {"18", "15", "16"}, // Notas da Ana (Matemática, Português, Física)
+                {"14", "17", "15"}, // Notas do Bruno
+                {"16", "16", "19"}  // Notas da Carla
+        };
+        String[] alunos=ArrayUtilities.vetor(nAlunos, disciplinas, matriz);
+        System.out.println("O aluno: " +alunos);
     }
 }

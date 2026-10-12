@@ -112,4 +112,13 @@ public class ArrayUtilities {
         return arrayInvertido;
     }
 
+    public static String[] vetor(String[] nAlunos, String[] disciplinas, String[][] matriz){
+        String[] Aluno={};
+        for(int i=0; i<nAlunos.length; i++){
+            Aluno[i]=nAlunos[i];
+        }
+        return Aluno;
+
+    }
+
 }
