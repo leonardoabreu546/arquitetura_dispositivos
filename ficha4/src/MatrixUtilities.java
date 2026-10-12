@@ -7,4 +7,14 @@ public class MatrixUtilities {
             System.out.println();
         }
     }
+
+    public static boolean isMatrix (int[][] matrixIrregular){
+        int tamanhoLinha = matrixIrregular[0].length;
+        for (int i=0; i<matrixIrregular.length; i++){
+            if(matrixIrregular[i].length!=tamanhoLinha){
+                return false;
+            }
+        }
+        return true;
+    };
 }
