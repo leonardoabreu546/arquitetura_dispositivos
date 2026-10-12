@@ -3,26 +3,39 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         //exercício 2
-        int[][] matrix = {
+        int[][] matriz1 = {
                 {1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}
         };
-        MatrixUtilities.show(matrix);
+        MatrixUtilities.show(matriz1);
 
-        //exercicio3
+        //exercicio 3
         int[][] matrizIrregular = {
                 {1, 2, 3},
                 {4, 5}
         };
-        boolean isMatrix = MatrixUtilities.isMatrix(matrizIrregular);
+        boolean isMatriz = MatrixUtilities.isMatrix(matrizIrregular);
 
-        if (isMatrix) {
+        if (isMatriz) {
             System.out.println("É uma matriz"); // Se for verdadeiro
         } else {
             System.out.println("Não é uma matriz"); // Se for falso
         }
 
+        int[][] matrizIdentidade = {
+                {1, 0, 0},
+                {0, 1, 0},
+                {0, 0, 1}
+        };
+
+        boolean resultado = MatrixUtilities.isIdentity(matrizIdentidade);
+
+        if (resultado) {
+            System.out.println("É uma matriz identidade");
+        } else {
+            System.out.println("Não é uma matriz identidade");
+        }
     };
 }
 
