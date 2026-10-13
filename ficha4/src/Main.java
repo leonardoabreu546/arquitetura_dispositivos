@@ -46,10 +46,16 @@ public class Main {
         int[][] matriz3 = {
                 {9, 8, 7},
                 {6, 5, 4},
-                {3, 2, 1}
+                {3, 2, 8}
         };
 
-        MatrixUtilities.areCompatibleForSum(matriz1, matriz3);
+        boolean compativeis = MatrixUtilities.areCompatibleForSum(matriz1, matriz3);
+
+        if (compativeis) {
+            System.out.println("As matrizes são compatíveis para soma.");
+        } else {
+            System.out.println("As matrizes não são compatíveis para soma.");
+        }
 
     };
 }
