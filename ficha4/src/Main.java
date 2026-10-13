@@ -43,6 +43,13 @@ public class Main {
         System.out.println("Nova matriz: ");
         MatrixUtilities.show(matriz2);
 
+        int[][] matriz3 = {
+                {9, 8, 7},
+                {6, 5, 4},
+                {3, 2, 1}
+        };
+
+        MatrixUtilities.areCompatibleForSum(matriz1, matriz3);
 
     };
 }

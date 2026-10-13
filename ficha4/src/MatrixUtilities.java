@@ -1,17 +1,17 @@
 public class MatrixUtilities {
     public static void show (int[][] matriz1) {
-        for (int i=0; i<matriz1.length; i++){
-            for(int j=0; j<matriz1[i].length; j++){
+        for (int i=0; i<matriz1.length; i++) {
+            for (int j = 0; j < matriz1[i].length; j++) {
                 System.out.print(matriz1[i][j] + " ");
             }
             System.out.println();
         }
     }
 
-    public static boolean isMatrix (int[][] matrixIrregular){
+    public static boolean isMatrix(int[][] matrixIrregular) {
         int tamanhoLinha = matrixIrregular[0].length;
-        for (int i=0; i<matrixIrregular.length; i++){
-            if(matrixIrregular[i].length!=tamanhoLinha){
+        for (int i = 0; i < matrixIrregular.length; i++) {
+            if (matrixIrregular[i].length != tamanhoLinha) {
                 return false;
             }
         }
@@ -40,14 +40,27 @@ public class MatrixUtilities {
         return true;
     };
 
-    public static int[][] multiplyBy(int [][]matriz1, int numero1){
-      int [][]novaMatriz = new int[matriz1.length][matriz1[0].length];
-      for(int i=0; i<matriz1.length; i++){
-          for(int j=0; j< matriz1[i].length; j++){
-              novaMatriz[i][j]=matriz1[i][j]*numero1;
+    public static int[][] multiplyBy(int[][] matriz1, int numero1) {
+        int[][] novaMatriz = new int[matriz1.length][matriz1[0].length];
+        for (int i = 0; i < matriz1.length; i++) {
+            for (int j = 0; j < matriz1[i].length; j++) {
+                novaMatriz[i][j] = matriz1[i][j] * numero1;
 
-          }
-      }
-      return novaMatriz;
+            }
+        }
+        return novaMatriz;
+    };
+
+    public static boolean areCompatibleForSum(int[][] matriz1, int[][] matriz3) {
+        if (matriz1.length != matriz3.length) {
+            return false;
+        }
+
+        for (int i = 0; i < matriz1.length; i++) {
+            if (matriz1[i].length != matriz3[i].length)
+                return false;
+
+        }
+        return true;
     };
 }
