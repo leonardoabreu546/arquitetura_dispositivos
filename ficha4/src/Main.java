@@ -29,6 +29,7 @@ public class Main {
                 {0, 0, 1}
         };
 
+        //exercício 4
         boolean resultado = MatrixUtilities.isIdentity(matrizIdentidade);
 
         if (resultado) {
@@ -36,6 +37,13 @@ public class Main {
         } else {
             System.out.println("Não é uma matriz identidade");
         }
+
+        //exercício 5
+        int[][] matriz2 = MatrixUtilities.multiplyBy(matriz1, 4);
+        System.out.println("Nova matriz: ");
+        MatrixUtilities.show(matriz2);
+
+
     };
 }
 

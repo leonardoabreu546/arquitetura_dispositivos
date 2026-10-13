@@ -39,4 +39,15 @@ public class MatrixUtilities {
         }
         return true;
     };
+
+    public static int[][] multiplyBy(int [][]matriz1, int numero1){
+      int [][]novaMatriz = new int[matriz1.length][matriz1[0].length];
+      for(int i=0; i<matriz1.length; i++){
+          for(int j=0; j< matriz1[i].length; j++){
+              novaMatriz[i][j]=matriz1[i][j]*numero1;
+
+          }
+      }
+      return novaMatriz;
+    };
 }
