@@ -63,4 +63,14 @@ public class MatrixUtilities {
         }
         return true;
     };
+
+    public static int[][] sumOf(int[][] matriz1, int[][] matriz2) {
+        int[][] arraySoma = new int[matriz1.length][matriz1[0].length];
+        for(int i=0;i<matriz1.length; i++){
+            for(int j=0; j< matriz1[i].length; j++){
+                arraySoma[i][j]=matriz1[i][j]+matriz2[i][j];
+            }
+        }
+        return arraySoma;
+    };
 }

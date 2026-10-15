@@ -43,6 +43,7 @@ public class Main {
         System.out.println("Nova matriz: ");
         MatrixUtilities.show(matriz2);
 
+        //exercício 5
         int[][] matriz3 = {
                 {9, 8, 7},
                 {6, 5, 4},
@@ -53,6 +54,10 @@ public class Main {
 
         if (compativeis) {
             System.out.println("As matrizes são compatíveis para soma.");
+            //exercício 6
+            System.out.println("Soma das matrizes: ");
+            int[][] arraySoma=MatrixUtilities.sumOf(matriz1, matriz3);
+            MatrixUtilities.show(arraySoma);
         } else {
             System.out.println("As matrizes não são compatíveis para soma.");
         }
