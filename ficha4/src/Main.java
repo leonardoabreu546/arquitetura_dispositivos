@@ -62,6 +62,9 @@ public class Main {
             System.out.println("As matrizes não são compatíveis para soma.");
         }
 
+        //exercício 7
+        char caracter = '*';
+        CharacterDrawingUtilities.drawElement(caracter);
     };
 }
 
