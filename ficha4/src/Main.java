@@ -65,7 +65,12 @@ public class Main {
         //exercício 7
         char caracter = '*';
         CharacterDrawingUtilities.drawElement(caracter);
+        //exercício 8
         CharacterDrawingUtilities.drawNewLine();
+
+        //exercício 9
+        int comprimento = 9;
+        CharacterDrawingUtilities.drawHorizontalSegmentWith(caracter, comprimento);
     };
 }
 
