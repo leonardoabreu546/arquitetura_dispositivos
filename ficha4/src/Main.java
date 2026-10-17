@@ -71,6 +71,10 @@ public class Main {
         //exercício 9
         int comprimento = 9;
         CharacterDrawingUtilities.drawHorizontalSegmentWith(caracter, comprimento);
+
+        //exercício 10
+        int largura = 5;
+        CharacterDrawingUtilities.drawFilledRectangleWith(caracter, comprimento, largura);
     };
 }
 

@@ -7,10 +7,19 @@ public class CharacterDrawingUtilities {
         System.out.println();
     }
 
-    public static void drawHorizontalSegmentWith (char caracter, int tamanho) {
-        for(int i=0; i<tamanho; i++){
+    public static void drawHorizontalSegmentWith (char caracter, int comprimento) {
+        for(int i=0; i<comprimento; i++){
             drawElement(caracter);
         }
-        System.out.println();
+    }
+
+    public static void drawFilledRectangleWith (char caracter, int comprimento, int largura){
+        drawNewLine();
+        System.out.println("Retângulo");
+        for(int i=0; i<largura; i++){
+            drawHorizontalSegmentWith(caracter, comprimento);
+            drawNewLine();
+        }
+
     }
 }
