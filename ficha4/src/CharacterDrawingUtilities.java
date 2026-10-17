@@ -3,4 +3,7 @@ public class CharacterDrawingUtilities {
         System.out.println(caracter);
     }
 
+    public static void drawNewLine (){
+        System.out.println();
+    }
 }

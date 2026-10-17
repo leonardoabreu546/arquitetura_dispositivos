@@ -65,6 +65,7 @@ public class Main {
         //exercício 7
         char caracter = '*';
         CharacterDrawingUtilities.drawElement(caracter);
+        CharacterDrawingUtilities.drawNewLine();
     };
 }
 
