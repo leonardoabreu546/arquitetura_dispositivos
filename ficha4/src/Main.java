@@ -75,7 +75,12 @@ public class Main {
         //exercício 10
         int largura = 5;
         CharacterDrawingUtilities.drawFilledRectangleWith(caracter, comprimento, largura);
+
+        //exercício 11
+        CharacterDrawingUtilities.drawEmptyRectangleWith(caracter, comprimento, largura);
     };
+
+
 }
 
 
