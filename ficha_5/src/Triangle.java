@@ -44,4 +44,9 @@ public class Triangle {
         setB(b);
         setC(c);
     }
+
+    public double carcularBase(){
+        return a.calcularDistancia(b);
+    }
+    
 }
