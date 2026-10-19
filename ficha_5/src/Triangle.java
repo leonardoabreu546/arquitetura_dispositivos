@@ -48,5 +48,8 @@ public class Triangle {
     public double carcularBase(){
         return a.calcularDistancia(b);
     }
-    
+
+    public double calcularAltura(){
+        return Math.abs(c.getY()- a.getY());
+    }
 }
