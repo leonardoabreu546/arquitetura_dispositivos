@@ -33,6 +33,13 @@ public class Point {
         setY(y);
     }
 
+    public double calcularDistancia(Point outroPonto){
+        double difX = outroPonto.getX()-this.x;
+        double difY = outroPonto.getY()-this.y;
+
+        return Math.sqrt(Math.pow(difX, 2) + Math.pow(difY, 2));
+    }
+
 
 }
 
