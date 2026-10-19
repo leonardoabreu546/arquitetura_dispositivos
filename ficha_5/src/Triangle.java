@@ -45,11 +45,18 @@ public class Triangle {
         setC(c);
     }
 
-    public double carcularBase(){
+    public double calcularBase(){
         return a.calcularDistancia(b);
     }
 
     public double calcularAltura(){
         return Math.abs(c.getY()- a.getY());
+    }
+
+    public double calcularArea(){
+        double base = calcularBase();
+        double altura = calcularAltura();
+
+        return (base*altura)/2.0;
     }
 }
