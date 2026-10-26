@@ -38,4 +38,18 @@ public class Rectangle {
     public void setWidth(double width){
         this.width = width;
     }
+
+    public double calcularArea(){
+        double width = getWidth();
+        double height = getHeight();
+
+        return width * height;
+    }
+
+    public double calcularPerimetro() {
+        double largura = getWidth();
+        double altura = getHeight();
+
+        return 2 * (largura+altura);
+    }
 }
