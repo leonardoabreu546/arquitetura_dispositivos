@@ -58,8 +58,18 @@ public abstract class Vehicle {
         return color;
     }
 
-    public void setColor(){
+    public void setColor(String color){
         this.color=color;
     }
-    
+
+    @Override
+    public String toString(){
+        return "Vehicle{" +
+                "year: " + year +'\'' +
+                "brand: " + brand + '\'' +
+                "model: " + model + '\'' +
+                "price: " + price + '\'' +
+                "color: " + color + '\'' +
+                "}";
+    }
 }
