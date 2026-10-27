@@ -5,32 +5,32 @@ public abstract class Vehicle {
     private double price;
     private String color;
 
-    public Vehicle(){
-        year=0;
-        brand="";
-        model="";
-        price=0.0;
-        color="";
+    public Vehicle() {
+        year = 0;
+        brand = "";
+        model = "";
+        price = 0.0;
+        color = "";
     }
 
-    public Vehicle(int year, String brand, String model, double price,String color){
-        this.year=year;
-        this.brand=brand;
-        this.model=model;
-        this.price=price;
-        this.color=color;
+    public Vehicle(int year, String brand, String model, double price, String color) {
+        this.year = year;
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+        this.color = color;
     }
 
 
-    public int getYear(){
+    public int getYear() {
         return year;
     }
 
-    public void setYear(int year){
-        this.year=year;
+    public void setYear(int year) {
+        this.year = year;
     }
 
-    public String getBrand(){
+    public String getBrand() {
         return brand;
     }
 
@@ -42,28 +42,28 @@ public abstract class Vehicle {
         return model;
     }
 
-    public void setModel(String model){
-        this.model=model;
+    public void setModel(String model) {
+        this.model = model;
     }
 
-    public double getPrice(){
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price){
-        this.price=price;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public String getColor(){
+    public String getColor() {
         return color;
     }
 
-    public void setColor(String color){
-        this.color=color;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Vehicle{" +
                 "year: " + year + ", " +
                 "brand: '" + brand + "', " +

@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // --- Testes Carro ---
         // Testar o construtor com parâmetros
         Car meuCarro = new Car(2024, "Tesla", "Model 3", 45000.0, "Preto");
@@ -41,5 +41,25 @@ public class Main {
 
         System.out.println("--- Teste Mota com Construtor Vazio + Setters ---");
         System.out.println(outraMota);
+
+        // --- Testes Círculo ---
+
+        // Testar o construtor com parâmetros
+        Point p1 = new Point(2.0, 3.0);
+        Circle meuCirculo = new Circle(p1, 5.0);
+
+        System.out.println("--- Teste com Parâmetros ---");
+        System.out.println(meuCirculo);
+
+        System.out.println();
+
+        // Testar o construtor com os Setters
+        Circle outroCirculo = new Circle();
+        outroCirculo.setPosition(new Point(1.0, 1.0)); // herdado da classe Shape
+        outroCirculo.setRadius(10.0);
+
+        System.out.println("--- Teste Círculo com Construtor Vazio + Setters ---");
+        System.out.println(outroCirculo);
+
     }
 }
