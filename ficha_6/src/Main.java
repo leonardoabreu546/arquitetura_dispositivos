@@ -42,6 +42,8 @@ public class Main {
         System.out.println("--- Teste Mota com Construtor Vazio + Setters ---");
         System.out.println(outraMota);
 
+        System.out.println();
+
         // --- Testes Círculo ---
 
         // Testar o construtor com parâmetros
@@ -61,5 +63,26 @@ public class Main {
         System.out.println("--- Teste Círculo com Construtor Vazio + Setters ---");
         System.out.println(outroCirculo);
 
+        System.out.println();
+
+        // --- Testes Retângulo ---
+
+        // Testar o construtor com parâmetros
+        Point p2 = new Point (4.0, 2.0);
+        Rectangle meuRectangulo = new Rectangle(p2, 4.0, 3.0);
+        System.out.println("--- Teste com Parâmetros ---");
+        System.out.println(meuRectangulo);
+
+        System.out.println();
+
+        // Testar o construtor com os Setters
+        Rectangle outroRectangulo = new Rectangle();
+        outroRectangulo.setComp(4.0);
+        outroRectangulo.setLarg(2.0);
+
+        System.out.println("--- Teste Retângulo com Construtor Vazio + Setters ---");
+        System.out.println(outroRectangulo);
+
+        System.out.println();
     }
 }
