@@ -77,6 +77,7 @@ public class Main {
 
         // Testar o construtor com os Setters
         Rectangle outroRectangulo = new Rectangle();
+        outroRectangulo.setPosition(new Point(3.0, 5.0));
         outroRectangulo.setComp(4.0);
         outroRectangulo.setLarg(2.0);
 
@@ -84,5 +85,26 @@ public class Main {
         System.out.println(outroRectangulo);
 
         System.out.println();
+
+        // --- Testes Triângulo ---
+
+        // Testar o construtor com parâmetros
+        Point p3= new Point(5.0, 4.0);
+        Triangle meuTriangulo = new Triangle(p3, 5.0, 6.0);
+        System.out.println("--- Teste com Parâmetros ---");
+        System.out.println(meuTriangulo);
+
+        // Testar o construtor com os Setters
+        Triangle outroTriangulo= new Triangle();
+        outroTriangulo.setPosition(new Point(1.0, 3.0));
+        outroTriangulo.setBase(3.0);
+        outroTriangulo.setAltura(5.0);
+
+        System.out.println("--- Teste Triângulo com Construtor Vazio + Setters ---");
+        System.out.println(outroTriangulo);
+        System.out.println();
+
+
+
     }
 }
