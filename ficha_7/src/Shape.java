@@ -1,4 +1,4 @@
-public abstract class Shape {
+public abstract class Shape implements Labelled{
     private Point position;
 
     public Shape() {
@@ -20,6 +20,16 @@ public abstract class Shape {
     public abstract double getArea();
 
     public abstract double getPerimeter();
+
+    @Override
+    public String toString(){
+        return ("Posição: " + getPosition());
+    }
+
+    @Override
+    public String getLabel(){
+        return(getClass().getSimpleName() + " ,posição: " + getPosition());
+    }
 
 }
 
