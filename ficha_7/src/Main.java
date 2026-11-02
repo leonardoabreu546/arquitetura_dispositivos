@@ -35,5 +35,13 @@ public static void main(String[] args) {
     System.out.print("Soma perimetros: ");
     System.out.println(somaPerimeter);
 
+    ArrayList<Drawable> figuras = new ArrayList<>();
+    figuras.add(new Circle(new Point(1.0, 2.0), 4.0));
+    figuras.add(new Rectangle(new Point(3.0, 4.0), 5.0, 10.0));
+
+    System.out.println("\n--- Elementos Desenháveis (Parte C) ---");
+    for(Drawable figura : figuras){
+        figura.draw();
+    }
 }
 

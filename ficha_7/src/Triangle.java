@@ -45,4 +45,5 @@ public class Triangle extends Shape {
     public String toString(){
         return "Triângulo [Posição: (" + getPosition().getX() + ", " + getPosition().getY() + "), Base: " + base + ", Altura: " + altura + ", Área: " + getArea() + ", Perímetro: " + getPerimeter() + "]";
     }
+
 }

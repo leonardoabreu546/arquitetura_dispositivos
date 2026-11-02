@@ -1,4 +1,4 @@
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
     private double comp;
     private double larg;
 
@@ -43,5 +43,10 @@ public class Rectangle extends Shape {
     @Override
     public String toString() {
         return "Retângulo [Posição: (" + getPosition().getX() + ", " + getPosition().getY() + "), Comprimento: " + comp + ", Largura: " + larg + ", Área: " + getArea() + ", Perímetro: " + getPerimeter() + "]";
+    }
+
+    @Override
+    public void draw(){
+        System.out.println("A desenhar um Retângulo: [Comprimento: " + getComp() + ", Largura: " + getLarg());
     }
 }

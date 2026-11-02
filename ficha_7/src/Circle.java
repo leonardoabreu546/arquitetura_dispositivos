@@ -1,4 +1,4 @@
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
     private double radius;
 
     public Circle() {
@@ -34,5 +34,10 @@ public class Circle extends Shape {
     @Override
     public String toString() {
         return "Círculo [Posição: (" + getPosition().getX() + ", " + getPosition().getY() + "), Raio: " + radius + ", Área: " + getArea() + ", Perímetro: " + getPerimeter() + "]";
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("A desenhar um Círculo [Raio: " + getRadius() + "]");
     }
 }

@@ -1,4 +1,4 @@
-public abstract class Shape implements Labelled, Measurable{
+public abstract class Shape implements Labelled, Measurable {
     private Point position;
 
     public Shape() {
