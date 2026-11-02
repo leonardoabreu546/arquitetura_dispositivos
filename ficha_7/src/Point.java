@@ -39,5 +39,10 @@ public class Point {
 
         return Math.sqrt(Math.pow(difX, 2) + Math.pow(difY, 2));
     }
+
+    @Override
+    public  String toString(){
+        return("X: "+ getX() + " Y: " + getY());
+    }
 }
 

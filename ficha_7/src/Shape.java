@@ -28,7 +28,7 @@ public abstract class Shape implements Labelled{
 
     @Override
     public String getLabel(){
-        return(getClass().getSimpleName() + " ,posição: " + getPosition());
+        return(getClass().getSimpleName() + ", posição: " + getPosition());
     }
 
 }

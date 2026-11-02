@@ -1,13 +1,16 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
-
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+import java.util.ArrayList;
+public static void main(String[] args) {
+    ArrayList<Labelled> elementos = new ArrayList<>();
+    elementos.add(new Car(2020, "Toyota", "Corolla", 20000.0, "Azul"));
+    elementos.add(new Motorcycle(2022, "Yamaha", "MT-07",7500.0, "Preto"));
+    elementos.add(new Circle(new Point(1.0, 2.0), 4.0));
+    elementos.add(new Rectangle(new Point(3.0, 4.0), 5.0, 10.0));
+    
+    for(Labelled elemento : elementos){
+        System.out.println(elemento.getLabel());
     }
+
+    
+    
 }
+
