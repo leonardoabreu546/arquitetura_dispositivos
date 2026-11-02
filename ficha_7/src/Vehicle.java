@@ -1,4 +1,4 @@
-public abstract class Vehicle {
+public abstract class Vehicle implements Labelled{
     private int year;
     private String brand;
     private String model;
@@ -70,5 +70,10 @@ public abstract class Vehicle {
                 "model: '" + model + "', " +
                 "price: " + price + ", " +
                 "color: '" + color + "'}";
+    }
+
+    @Override
+    public String getLabel(){
+        return(getBrand() + " " + getModel() + " (" + getYear() + ")");
     }
 }
