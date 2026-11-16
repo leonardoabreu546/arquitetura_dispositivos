@@ -27,6 +27,20 @@ public class Rational {
     public void setDenominator(int denominator) {
         this.denominator = denominator;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Rational rational = (Rational) obj;
+        return numerator == rational.numerator
+                && denominator == rational.denominator;
+    }
 }
 
 
