@@ -1,4 +1,4 @@
-public class Rational {
+public class Rational implements Comparable<Rational> {
     private int numerator;
     private int denominator;
 
@@ -40,6 +40,13 @@ public class Rational {
         Rational rational = (Rational) obj;
         return numerator == rational.numerator
                 && denominator == rational.denominator;
+    }
+
+    @Override
+    public int compareTo(Rational rational) {
+        double value = (double) numerator / denominator;
+        double otherValue = (double) rational.numerator / rational.denominator;
+        return Double.compare(value, otherValue);
     }
 }
 
