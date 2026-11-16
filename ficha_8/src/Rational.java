@@ -48,6 +48,11 @@ public class Rational implements Comparable<Rational> {
         double otherValue = (double) rational.numerator / rational.denominator;
         return Double.compare(value, otherValue);
     }
+
+    @Override
+    public int hashCode() {
+        return 31 * numerator + denominator;
+    }
 }
 
 
