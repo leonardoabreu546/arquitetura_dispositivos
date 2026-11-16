@@ -53,5 +53,10 @@ public class Main {
         rationals.add(new Rational(2, 5));
 
         Collections.sort(rationals);
+
+        ArrayList<Student> students = new ArrayList<>();
+        students.add(new Student(102, "Ana"));
+        students.add(new Student(101, "Bruno"));
+        students.add(new Student(103, "Carla"));
     }
 }
