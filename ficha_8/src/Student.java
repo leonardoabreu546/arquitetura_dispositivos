@@ -45,4 +45,9 @@ public class Student implements Comparable<Student> {
     public int compareTo(Student student) {
         return Integer.compare(number, student.number);
     }
+
+    @Override
+    public int hashCode() {
+        return 31 * number + name.hashCode();
+    }
 }
