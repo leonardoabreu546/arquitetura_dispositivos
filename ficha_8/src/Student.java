@@ -27,4 +27,17 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Student student = (Student) obj;
+        return number == student.number && name.equals(student.name);
+    }
 }
