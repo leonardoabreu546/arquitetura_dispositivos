@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -44,5 +45,10 @@ public class Main {
             default:
                 System.out.println("Opção inválida.");
         }
+
+        ArrayList<Rational> rationals = new ArrayList<>();
+        rationals.add(new Rational(1, 2));
+        rationals.add(new Rational(3, 4));
+        rationals.add(new Rational(2, 5));
     }
 }
