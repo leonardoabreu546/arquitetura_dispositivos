@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -50,5 +51,7 @@ public class Main {
         rationals.add(new Rational(1, 2));
         rationals.add(new Rational(3, 4));
         rationals.add(new Rational(2, 5));
+
+        Collections.sort(rationals);
     }
 }
