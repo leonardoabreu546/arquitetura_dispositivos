@@ -23,5 +23,26 @@ public class Main {
         } else {
             System.out.println("Opção inválida.");
         }
+
+        System.out.println("Resultado com switch:");
+        switch (selectedOption) {
+            case "START":
+                System.out.println("A iniciar o jogo...");
+                break;
+            case "SAVEGAME":
+                System.out.println("A guardar o jogo...");
+                break;
+            case "LOADGAME":
+                System.out.println("A carregar o jogo...");
+                break;
+            case "HIGHSCORES":
+                System.out.println("A mostrar os recordes...");
+                break;
+            case "QUIT":
+                System.out.println("A sair do jogo...");
+                break;
+            default:
+                System.out.println("Opção inválida.");
+        }
     }
 }
